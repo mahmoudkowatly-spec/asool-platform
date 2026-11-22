@@ -7,6 +7,9 @@ import ProjectDetails from './pages/ProjectDetails'
 import Clients from './pages/Clients'
 import Contractors from './pages/Contractors'
 import Employees from './pages/Employees'
+import Suppliers from './pages/Suppliers'
+import Inventory from './pages/Inventory'
+import Accounting from './pages/Accounting'
 import Placeholder from './pages/Placeholder'
 
 export default function App() {
@@ -20,9 +23,9 @@ export default function App() {
           <Route path="/clients" element={<Clients />} />
           <Route path="/contractors" element={<Contractors />} />
           <Route path="/employees" element={<Employees />} />
-          <Route path="/suppliers" element={<Placeholder />} />
-          <Route path="/inventory" element={<Placeholder />} />
-          <Route path="/accounting" element={<Placeholder />} />
+          <Route path="/suppliers" element={<Suppliers />} />
+          <Route path="/inventory" element={<Inventory />} />
+          <Route path="/accounting" element={<Accounting />} />
           <Route path="/ledger" element={<Placeholder />} />
           <Route path="/treasury" element={<Placeholder />} />
           <Route path="/reports" element={<Placeholder />} />
