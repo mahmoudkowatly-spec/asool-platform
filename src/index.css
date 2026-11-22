@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Tajawal', Arial, sans-serif;
+  background: #F0F2F5;
+  color: #050505;
+  direction: rtl;
+}
+
+:root {
+  --rg-primary: #1877F2;
+  --rg-primary-light: #E7F3FF;
+  --rg-bg: #F0F2F5;
+  --rg-white: #FFFFFF;
+  --rg-border: #CED0D4;
+  --rg-text-primary: #050505;
+  --rg-text-secondary: #65676B;
+  --rg-hover: #F2F2F2;
+  --rg-success: #42B883;
+  --rg-danger: #E41E3F;
+  --rg-warning: #F59E0B;
+  --rg-sidebar-width: 280px;
+  --rg-header-height: 56px;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: #c1c1c1; border-radius: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+.ant-layout-sider {
+  background: #fff !important;
+  border-left: 1px solid var(--rg-border);
+}
+
+.ant-menu-item-selected {
+  background: var(--rg-primary-light) !important;
+  color: var(--rg-primary) !important;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.page-header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.page-header p {
+  color: var(--rg-text-secondary);
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+
+.metric-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+.metric-card small {
+  display: block;
+  color: var(--rg-text-secondary);
+  font-size: 13px;
+}
+
+.metric-card strong {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.metric-card em {
+  display: block;
+  font-style: normal;
+  font-size: 12px;
+  color: var(--rg-text-secondary);
+  margin-top: 2px;
+}
+
+.status-tag {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-active { background: #e6f7ff; color: #1890ff; }
+.status-sold { background: #f6ffed; color: #52c41a; }
+.status-stopped { background: #fff2e8; color: #fa8c16; }
+.status-done { background: #f9f0ff; color: #722ed1; }
+
+.table-wrap {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
